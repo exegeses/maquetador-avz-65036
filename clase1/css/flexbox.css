@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e221c;
+    color: #b2f78e;
+    width: 758px;
+    margin: 32px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+h1, h2{
+    margin: 24px 0px;
+}
+
+#contenedor{
+    height: 350px;
+    background-color: #2e3a44;
+
+    display: flex;
+    /* distribución en el eje x */
+    /* justify-content: start; /* predeterminado - a la izquierda */
+    /* justify-content: end; /* a la derecha */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+#contenedor2{
+    height: 350px;
+    background-color: #2e3a44;
+
+    display: flex;
+    /* align-items: start; /* predeterminado - arriba */
+    /* align-items: end; /* abajo */
+    align-items: center;
+}
+
+#contenedor3{
+    height: 450px;
+    background-color: #2e3a44;
+
+    display: flex;
+    flex-wrap: wrap; /* respeta los anchos (no los compacta) */
+
+    justify-content: space-between;
+}
+
+    article{
+        background-color: #d2cece;
+        color: #1e221c;
+        width: 200px;
+        height: 156px;
+    }

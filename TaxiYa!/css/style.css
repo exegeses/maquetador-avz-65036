@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    color: #0C0809;
+    font-weight: 300;
+}
+
+#hero-banner{
+    height: 640px;
+    background-image: url(../imgs/hero-bg.jpg);
+    background-position: center 0;
+    background-repeat: repeat-x;
+    background-color: #FFC61A;
+}
+    #hero-banner header{
+        width: 1024px;
+        height: 104px;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
