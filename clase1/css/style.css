@@ -11,6 +11,10 @@ body{
     color: #0C0809;
     font-weight: 300;
 }
+/* globales */
+a{
+    text-decoration: none;
+}
 
 #hero-banner{
     height: 640px;
@@ -27,5 +31,19 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
+        #hero-banner header a{
+            color: #fff;
+            font-size: 24px;
+        }
+            #hero-banner header a img{
+                vertical-align: middle;
+            }
+            #hero-banner header a span{
+                color: #FFC61A;
+                margin-left: 12px;
+            }
+            #hero-banner header nav a{
+                font-size: 20px;
+                padding: 12px;
+            }

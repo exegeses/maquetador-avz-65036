@@ -11,6 +11,10 @@ body{
     color: #0C0809;
     font-weight: 300;
 }
+/* globales */
+a{
+    text-decoration: none;
+}
 
 #hero-banner{
     height: 640px;
@@ -27,5 +31,61 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
+        #hero-banner header a{
+            color: #fff;
+            font-size: 24px;
+        }
+            #hero-banner header a img{
+                vertical-align: middle;
+            }
+            #hero-banner header a span{
+                color: #FFC61A;
+                margin-left: 12px;
+            }
+            #hero-banner header nav a{
+                font-size: 20px;
+                padding: 12px;
+            }
+
+    #hero-banner div{
+        width: 700px;
+        margin: 24px auto;
+        text-align: center;
+    }
+        #hero-banner h1{
+            color: #fff;
+            margin-bottom: 12px;
+        }
+            #hero-banner h1 span{
+                color: #FFC61A;
+            }
+        #hero-banner a{
+            color: #FFC61A;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        #hero-banner img{
+            margin-top: 40px;
+        }
+
+/* main */
+    /* sección urgente */
+#urgente{
+    width: 1024px;
+    margin: 64px auto;
+    display: flex;
+    justify-content: space-between;
+}
+    #urgente article{
+        width: 460px;
+        padding: 16px 24px;
+    }
+        #urgente article h2{
+            margin-bottom: 24px;
+        }
+        
+        #urgente article div{
+            background-color: #eae4d5;
+            margin-bottom: 24px;
+        }
