@@ -81,11 +81,25 @@ a{
         width: 460px;
         padding: 16px 24px;
     }
+        #urgente article p{
+            margin-bottom: 32px;
+        }
+
         #urgente article h2{
             margin-bottom: 24px;
         }
         
         #urgente article div{
-            background-color: #eae4d5;
             margin-bottom: 24px;
+            background-image: url(../imgs/handshake.png);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            padding-left: calc( 24px + 48px );
+        }
+        #urgente article div:nth-child(4){
+            /* el div que se 4to hijo del article */
+            background-image: url(../imgs/world.png);
+        }
+        #urgente article div h3{
+            margin-bottom: 8px;
         }
