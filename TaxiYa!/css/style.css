@@ -103,3 +103,43 @@ a{
         #urgente article div h3{
             margin-bottom: 8px;
         }
+
+/* sección servicios */
+#servicios{
+    height: 400px;
+    background-color: #0C0809;
+    display: flex;
+}
+    #servicios div{
+        width: 1024px;
+        margin: auto;
+        color: #FFC61A;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+        #servicios div h2{
+            width: 1024px;/* width: 100%;  es lo mismo */
+            margin-bottom: 40px;
+        }
+        #servicios div article{
+            width: 232px;
+        }
+
+        #servicios div article h3{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        #servicios div article p{
+            color: #ffffff;
+            margin-top: 24px;
+        }
+    /* padding en imágenes */
+        /*    #servicios div article img{
+                background-color: #fff;
+                width: 128px;
+                border-radius: 50%;
+                padding: calc( 128px - 88px );
+            }
+        */
