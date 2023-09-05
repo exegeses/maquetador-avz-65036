@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    color: #2D3A32;
+    background-color: #D8F0E2;
+    padding: 64px;
+}
+
+    article{
+        width: 412px;
+        background-color: #fff;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    article{
+        padding: 64px 32px;
+        position: relative;
+    }
+    /* position para desplazar la imagen */
+    article img{
+        width: 128px;
+        position: absolute;
+        top: -64px;
+        left: 152px;
+    }

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    color: #2D3A32;
+}
+    main{
+        width: 1200px;
+        transition: 500ms;
+        margin: auto;
+    }
+    #testimonios{
+        background-color: #D8F0E2;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 34px;
+        row-gap: 48px;
+        padding: 48px 32px;
+        transition: 500ms;
+    }
+        #testimonios div{
+            width: 356px;
+            height: 305px;
+            background-color: #fff;
+            padding: 24px 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 500ms;
+        }
+            #testimonios div img{
+                width: 128px;
+            }
+            #testimonios div h2{
+                margin-bottom: 16px;
+                transition: 500ms;
+            }
+
+/* tablet   1024px */            
+@media ( max-width: 1024px ) {
+    main{
+        width: 1024px;
+    }
+    #testimonios{
+        padding: 48px 62px;
+        column-gap: 68px;
+        row-gap: 52px;
+    }
+        #testimonios div{
+            width: 416px;
+        }
+        #testimonios div img{
+            vertical-align: middle;
+        }
+        #testimonios div h2{
+            display: inline;
+            margin-left: 16px;
+        }
+        #testimonios div p{
+            margin-top: 32px;
+        }
+}
+
+/* mobile   768px */
+@media ( max-width: 768px ) {
+    main{
+        width: 768px;
+    }
+        #testimonios{
+            padding: 48px;
+            row-gap: 40px;
+        }
+            #testimonios div{
+                width: 672px;
+                padding: 16px;
+            }
+            #testimonios div h2{
+                display: block;
+                margin-left: 0;
+                margin-top: 16px;
+            }
+            #testimonios div p{
+                margin: 0px 104px;
+            }
+}
