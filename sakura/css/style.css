@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3D4043;
+    font-weight: 300;
+    color: #3D4043;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* 1024 */
+header{
+    max-width: 1024px;
+    height: 80px;
+    margin: auto;
+    background-color: #E29086;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* alinear en vertical */
+}
+
+header a{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+/* navegación */
+header nav a{
+    font-size: 20px;
+    padding: 10px;
+}
+header a img{
+    margin: 0px 12px;
+    vertical-align: middle;
+}
+
+/* selector de atributo */
+img[alt="hamburger"]{
+    /* ocultamos el hamburger */
+    display: none;
+}
+
+/* 768 */
+@media ( max-width: 768px ){
+    header{
+        max-width: 768px;
+        display: block;
+    }
+    header a img{
+        margin-top: 8px;
+    }
+    /*navegación*/
+    header nav{
+        position: relative;
+        z-index: -10;
+        transform: translateY( -300px );
+        transition: 500ms;
+    }
+    .desplegado{
+        transform: translateY( 0px );
+    }
+    header nav a{
+        text-align: center;
+        display: block;
+        background-color: #E29086;
+        transition: 500ms;
+    }
+    header nav a:hover{
+        background-color: hsl(7, 61%, 65%);
+    }
+
+    img[alt="hamburger"]{
+        /* mostramos el hamburger */
+        display: inline;
+        width: 32px;
+        position: absolute;
+        /*left: calc( 768px - 32px - 12px );*/
+        right: 12px;
+        top: 24px;
+    }
+
+}
