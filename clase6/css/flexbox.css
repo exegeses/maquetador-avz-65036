@@ -1,0 +1,16 @@
+body{
+    width: 768px;
+    margin: auto;
+}
+    #contenedor{
+        background-color: #747474;
+        height: 480px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        article{
+            width: 128px;
+            height: 128px;
+            background-color: #75c77d;
+            text-align: center;
+        }

@@ -18,7 +18,7 @@ header{
     max-width: 1024px;
     height: 80px;
     margin: auto;
-    background-color: #E29086;
+    background-color: #F17580;
     display: flex;
     justify-content: space-between;
     align-items: center; /* alinear en vertical */
@@ -45,6 +45,49 @@ img[alt="hamburger"]{
     display: none;
 }
 
+main{
+    max-width: 1024px;
+    margin: auto;
+}
+
+#hero-banner{
+    height: 800px;
+    background-color: #F17580;
+    background-image: url(../imgs/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: -280px 0px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+    #hero-banner div{
+        width: 164px;
+        margin-right: 80px;
+        text-align: center;
+    }
+    #hero-banner div h1{
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    #hero-banner div a{
+        border: 1px solid #fff;
+        border-radius: 8px;
+        display: block;
+        width: 164px;
+        padding: 12px ;
+        color: #fff;
+        font-size: 24px;
+        transition: 500ms;
+    }
+    #hero-banner div a:hover{
+        background-color: #fff;
+        color: #F17580;
+    }
+
+
+
 /* 768 */
 @media ( max-width: 768px ){
     header{
@@ -67,11 +110,11 @@ img[alt="hamburger"]{
     header nav a{
         text-align: center;
         display: block;
-        background-color: #E29086;
+        background-color: #F17580;
         transition: 500ms;
     }
     header nav a:hover{
-        background-color: hsl(7, 61%, 65%);
+        background-color: #EF626E;
     }
 
     img[alt="hamburger"]{
@@ -83,5 +126,27 @@ img[alt="hamburger"]{
         right: 12px;
         top: 24px;
     }
+
+    main{
+        max-width: 768px;
+    }
+    #hero-banner{
+        height: 1002px;
+        background-position: -204px 0px;
+        align-items: end;
+        justify-content: center;
+    }
+        #hero-banner div{
+            margin-right: 0px;
+            margin-bottom: 32px;
+            width: 282px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #hero-banner div h1{
+            width: 100%;
+        }
+
 
 }

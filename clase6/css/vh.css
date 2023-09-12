@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100%; */
+    height: 100vh;
+}
+    article{
+        height: 450px;
+        background-color: #dadada;
+        height: 100vh;
+    }
+        article img{
+            height: 100%;
+        }
+    section{
+        height: 100vh;
+        background-color: #a8b6cf;
+    }
