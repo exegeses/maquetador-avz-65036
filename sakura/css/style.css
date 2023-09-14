@@ -85,8 +85,50 @@ main{
         background-color: #fff;
         color: #F17580;
     }
+#servicios {
+    height: 288px;
+    background-color: #fff;
+    margin: 56px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 128px;
+    row-gap: 24px;
+}
+    #servicios div{
+        width: 384px;
+        height: 128px;
+        position: relative;
+        padding: 24px 0px 0px 144px;
+        /* margin: 12px 64px; */
+    }
+        #servicios div::before{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #servicios div p{
+            margin-top: 16px;
+        }
+    #servicios div:nth-child(1)::before{
+        content: url("../imgs/delivery.png");
+    }
+    #servicios div:nth-child(2)::before{
+        content: url("../imgs/wallet.png");
+    }
+    #servicios div:nth-child(3)::before{
+        content: url("../imgs/gift.png");
+    }
+    #servicios div:nth-child(4)::before{
+        content: url("../imgs/customer-service.png");
+    }
 
-
+/* logos de font awesome */
+.fa-brands{
+    font-size: 24px;
+    color: #fff;
+    font-style: normal;
+}
 
 /* 768 */
 @media ( max-width: 768px ){
@@ -135,6 +177,8 @@ main{
         background-position: -204px 0px;
         align-items: end;
         justify-content: center;
+        position: relative;
+        z-index: -20;
     }
         #hero-banner div{
             margin-right: 0px;
@@ -148,5 +192,36 @@ main{
             width: 100%;
         }
 
-
+/* sección servicios */
+    #servicios{
+        height: 192px;
+        column-gap: 80px;
+        row-gap: 32px;
+    }
+        #servicios div{
+            width: 312px;
+            height: 80px;
+            padding: 14px 0px 0px 80px;
+        }
+        #servicios div::before{
+            top:8px;
+        }
+        #servicios div:nth-child(1)::before{
+            content: url("../imgs/delivery-2.png");
+        }
+        #servicios div:nth-child(2)::before{
+            content: url("../imgs/wallet-2.png");
+        }
+        #servicios div:nth-child(3)::before{
+            content: url("../imgs/gift-2.png");
+        }
+        #servicios div:nth-child(4)::before{
+            content: url("../imgs/customer-service-2.png");
+        }
+        #servicios div h2{
+            font-size: 16px;
+        }
+        #servicios div p{
+            margin-top: 8px;
+        }
 }
