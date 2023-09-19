@@ -130,6 +130,27 @@ main{
     font-style: normal;
 }
 
+/* footer */
+footer{
+    width: 1024px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+    footer a{
+        color: #fff;
+        font-weight: 600;
+    }
+    img[alt="Logo Sakura"]{
+        vertical-align: middle;
+        width: 32px;
+        margin-right: 8px;
+    }
+    footer div i{
+        margin: 6px;
+    }
+
 /* 768 */
 @media ( max-width: 768px ){
     header{
@@ -223,5 +244,10 @@ main{
         }
         #servicios div p{
             margin-top: 8px;
+        }
+
+        footer{
+            width: 768px;
+            height: 120px;
         }
 }
