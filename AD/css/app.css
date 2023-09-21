@@ -3,6 +3,9 @@
 :root{
     /* variables */
     --textos: #272D38;
+    --dark: #15163D;
+    --btn: #04146C;
+    --btn-hover: #071fa8;
 }
 
 *{
@@ -28,6 +31,8 @@ header{
     /* background-color: #d9e3fb; */
 }
     header a img:nth-child(1){
+        position: relative;
+        z-index: 10;
         width: 32px;
         margin-top: 14px;
         margin-left: 12px;
@@ -40,8 +45,6 @@ header{
     }
 /* navegación desplegable */
     header nav{
-        position: relative;
-        z-index: -10;
         transform: translateY( calc(-138px - 48px) );
         transition: .5s;
     }
@@ -59,10 +62,78 @@ header{
     header nav a:hover{
         background-color: #e9f1fd;
     }
-    
+main{
+    width: 768px;
+    min-height: 600px;
+    margin: auto;
+}
+#about{
+    height: 280px;
+    text-align: center;
+}
+    #about h2{
+        font-size: 48px;
+        margin-top: 24px;
+    }
+    #about h1{
+        margin: 32px;
+        font-weight: 400;
+    }
+    #about a{
+        background-color: var(--btn);
+        color: #fff;
+        width: 200px;
+        display: block;
+        margin: auto;
+        padding: 12px;
+        border-radius: 8px;
+        transition: .5s;
+    }
+    #about a:hover{
+        background-color: var(--btn-hover);
+    }
+
+#branding,
+#branding2
+{
+    margin-top: 56px;
+    text-align: center;
+}
+    #branding div,
+    #branding2 div {
+        width: 520px;
+        margin: auto;
+    }
+        #branding h2,
+        #branding2 h2 {
+            margin-top: 48px;
+            font-size: 40px;
+        }
+        #branding p,
+        #branding2 p {
+            margin: 24px 0 20px 0;
+            font-size: 24px;
+        }
+
+        #branding2 h2 {
+            margin-top: 24px;
+        }
+
+img[alt="branding 3"]{
+    margin-top: 56px;
+}
+
+footer{
+    width: 768px;
+    height: 156px;
+    height: 156px;
+    margin: 48px auto 0 auto;
+    background-color: var(--dark);
+}
+
+
 /* desde 769 hasta 1024px */
-@media (min-width: 769px ) and ( max-width: 1024px ) {
-/* @media ( 769 >= width <= 1024px ) */
+@media (min-width: 769px ) {
     header{
         width: 1024px;
         height: 104px;
@@ -86,5 +157,90 @@ header{
         img[alt="menu"]{
             display: none;
         }
+    main{
+        width: 1024px;
+        margin: auto;
+    }
+    #about{
+        width: 768px;
+        margin: auto;
+    }
 
+    #branding,
+    #branding2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #branding2{
+        flex-direction: row-reverse;
+    }
+
+    #branding div,
+    #branding2 div {
+        width: 512px;
+    }
+        #branding img,
+        #branding2 img {
+            width: 512px;
+        }
+        #branding div h2,
+        #branding2 div h2
+        {
+            font-size: 32px;
+        }
+        #branding div p,
+        #branding2 div p
+        {
+            font-size: 16px;
+        }
+
+    img[alt="branding 3"]{
+        width: 1024px;
+    }
+
+    footer{
+        width: 1024px;
+    }
+}
+
+/* desde 1025  */
+@media (min-width: 1025px) {
+    header{
+        width: 1400px;
+        background-color: #d9e3fb;
+    }
+    main{
+        width: 1400px;
+    }
+    #about{
+        width: 1024px;
+    }
+
+    #branding,
+    #branding2
+    {
+        width: 1200px;
+        margin: auto;
+    }
+        #branding img,
+        #branding2 img
+        {
+            width: 600px;
+        }
+        #branding div,
+        #branding2 div
+        {
+            width: 600px;
+        }
+
+    img[alt="branding 3"]{
+        width: 1024px;
+        display: block;
+        margin: auto;
+    }
+
+    footer{
+        width: 1400px;
+        height: 240px;
+    }
 }
