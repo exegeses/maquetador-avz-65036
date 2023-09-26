@@ -1,0 +1,43 @@
+#testimonios{
+    background-color: #D8F0E2;
+    width: 1200px;
+    height: 754px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 356px);
+
+    justify-content: space-evenly;
+    /* column-gap: 34px; */
+    align-items: center;
+    /* row-gap: 48px; */
+}
+    #testimonios article{
+        background-color: #fff;
+        height: 305px;
+    }
+
+@media ( max-width: 1024px ) {
+    #testimonios{
+        width: 1024px;
+        height: 1111px;
+
+        grid-template-columns: repeat(2, 416px);
+    }
+        #testimonios article{
+            height: 305px;
+        }
+}
+
+@media (max-width: 768px){
+    #testimonios{
+        width: 768px;
+        padding: 48px;
+
+
+        grid-template-columns: 672px;
+        row-gap: 40px;
+    }
+        #testimonios article{
+            height: 305px;
+        }
+}

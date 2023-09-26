@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e2b32;
+    font-size: 1.2em;
+}
+
+#container{
+    width: 960px;
+    margin: auto;
+
+    display: grid;
+    /* templates */
+    /* grid-template-columns: 33.33% 33.33% 33.33%; */
+    /* grid-template-columns: 1fr; /* 1 col*/
+    /* grid-template-columns: 1fr 1fr; /* 2 col*/
+    /* grid-template-columns: 1fr 1fr 1fr; /* 3 col*/
+    /* grid-template-columns: repeat(3, 1fr);
+            /* repeat( cantidad, valor ) */
+
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    background-color: #d50;
+}
+    .grid-item{
+        background-color: #f8df8d;
+        border-radius: 8px;
+        padding: 8px;
+        text-align: center;
+    }
+    .grid-item:hover {
+        background-color: #e3ca7a;
+    }

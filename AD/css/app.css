@@ -207,7 +207,7 @@ footer{
 @media (min-width: 1025px) {
     header{
         width: 1400px;
-        background-color: #d9e3fb;
+        /* background-color: #d9e3fb; */
     }
     main{
         width: 1400px;
