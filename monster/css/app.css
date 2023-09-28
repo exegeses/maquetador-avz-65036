@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root{
+    --dark: #273237;
+    --btn-info: #7499AA;
+    --btn-info-hover: #50839B;
+    --btn-demo: #466472;
+    --btn-demo-hover: #1C2E36;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--dark);
+    font-size: 20px;
+}
+/* globales */
+a{
+    text-decoration: none;
+}
+
+/* 768 */
+header{
+    width: 768px;
+    margin: auto;
+    height: 96px;
+    background-color: var(--dark);
+}
+    img[alt="logo"]{
+        width: 64px;
+        position: relative;
+        top: 16px;
+        left: 16px;
+    }
+    header nav{
+        transform: translateY(-96px);
+    }
+    img[alt="hamburger"]{
+        width: 32px;
+        position: absolute;
+        top: 32px;
+        right: 16px;
+    }
+
+main{
+    width: 768px;
+    margin: auto;
+}
+
+/* portfolio */
+#portfolio {
+    margin: 24px 0px;
+    display: grid;
+    row-gap: 24px;
+}
+    .snap{
+        width: 768px;
+    }
+    h2{
+        margin: 24px;
+        font-weight: 300;
+    }
+    h2::before{
+        content: url("../imgs/php-24.png");
+        margin-right: 12px;
+    }
+    .stars{
+        margin: 0px 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stars figure img{
+        width: 24px;
+    }
+
+footer{
+    width: 768px;
+    height: 132px;
+    margin: auto;
+    background-color: var(--dark);
+}
+
+/* 1024 */
+@media ( min-width: 769px ) {
+    header{
+        width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        img[alt="logo"]{
+            position: static; /* quita position */
+            margin-left: 16px;
+        }
+        header nav{
+            transform: translateY(0px);
+        }
+
+        header nav a{
+            color: #fff;
+            padding-right: 16px;
+        }
+        img[alt="hamburger"]{
+            display: none;
+        }
+}
+
+/* 1200 */
+@media ( min-width: 1025px ) {
+    header{
+        width: 1200px;
+        height: 104px;
+
+    }
+}
