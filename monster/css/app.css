@@ -34,18 +34,36 @@ header{
     img[alt="logo"]{
         width: 64px;
         position: relative;
+        z-index: 10;
         top: 16px;
         left: 16px;
     }
     header nav{
-        transform: translateY(-96px);
+        transform: translateY(-276px);
+        transition: 500ms;
     }
+        header nav a{
+            display: block;
+            text-align: center;
+            color: #fff;
+            padding: 8px;
+            background-color: var(--dark);
+            transition: 500ms;
+            &:hover{
+                 background-color: var(--btn-info);
+             }
+        }
+
     img[alt="hamburger"]{
         width: 32px;
         position: absolute;
         top: 32px;
         right: 16px;
     }
+.desplegado{
+    transform: translateY(26px);
+}
+
 
 main{
     width: 768px;
@@ -57,18 +75,29 @@ main{
     margin: 24px 0px;
     display: grid;
     row-gap: 24px;
+
+    & article{
+        border-radius: 8px;
+        /* box-shadow: x y blur color; */
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    }
 }
+
+
     .snap{
         width: 768px;
+        border-radius: 8px;
     }
     h2{
         margin: 24px;
         font-weight: 300;
-    }
-    h2::before{
+
+        &::before{
         content: url("../imgs/php-24.png");
         margin-right: 12px;
+        }
     }
+
     .stars{
         margin: 0px 24px;
         display: flex;
@@ -77,6 +106,32 @@ main{
     .stars figure img{
         width: 24px;
     }
+
+    .botones{
+        margin: 56px 0px;
+        text-align: center;
+    }
+        .botones a{
+            width: 256px;
+            padding: 8px;
+            display: inline-block;
+            border-radius: 8px;
+            color: white;
+            transition: 500ms;
+        }
+        .botones a:nth-child(1){
+            background-color: var(--btn-info);
+            margin-right: 88px;
+            &:hover{
+                 background-color: var(--btn-info-hover);
+             }
+        }
+        .botones a:nth-child(2){
+            background-color: var(--btn-demo);
+            &:hover{
+                 background-color: var(--btn-demo-hover);
+             }
+        }
 
 footer{
     width: 768px;
@@ -103,11 +158,45 @@ footer{
 
         header nav a{
             color: #fff;
+            display: inline;
             padding-right: 16px;
         }
         img[alt="hamburger"]{
             display: none;
         }
+
+    main{
+        width: 1024px;
+    }
+    #portfolio{
+        padding: 40px;
+        grid-template-columns: 1fr 1fr;
+        /*row-gap: 40px;
+        column-gap: 40px;*/
+        gap: 40px;
+    }
+        .snap{
+            width: 100%;
+        }
+        #portfolio h2{
+            font-size: 20px;
+            &::before{
+                position: relative;
+                top: 4px;
+             }
+        }
+        .botones{
+            margin: 32px 0px;
+        }
+        .botones a{
+            width: 192px;
+        }
+        .botones a:nth-child(1){
+            margin-right: 20px;
+        }
+    footer{
+        width: 1024px;
+    }
 }
 
 /* 1200 */
@@ -115,6 +204,36 @@ footer{
     header{
         width: 1200px;
         height: 104px;
+    }
+    main{
+        width: 1200px;
+    }
+    #portfolio{
+        grid-template-columns: repeat(3, 1fr);
+    }
+        #portfolio h2{
+            margin: 24px 24px 16px 24px;
+        }
+            .botones a{
+                width: 128px;
+            }
+            .botones a:nth-child(1){
+                margin-right: 42px;
+            }
 
+    footer{
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1440px){
+    header{
+        width: 1440px;
+    }
+    main{
+        width: 1440px;
+    }
+    footer{
+        width: 1440px;
     }
 }
