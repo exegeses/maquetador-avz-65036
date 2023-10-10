@@ -1,0 +1,93 @@
+@import "tipografia.css";
+:root{
+    --text:  #f8fcfc; /* #303030 */
+    --bg: #0b1e1e; /* #e1f4f4  */
+    --primary: #65c8c8; /* #379a9a */
+    --secondary: #1b4b4b; /* #b4e4e4 */
+    --accent: #69c9c9; /* #369696; */
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Figtree', sans-serif;
+    font-size: 24px;
+}
+main{
+    width: 768px;
+    margin: 40px auto;
+}
+
+#primero{
+    cursor: pointer;
+    transition-property: color, font-size;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    margin: 40px 0px;
+}
+#primero:hover{
+    font-size: 40px;
+    color: var(--accent);
+}
+
+#segundo{
+    background-color: var(--secondary);
+}
+    #caja{
+        background-color: var(--accent);
+        width: 128px;
+        height: 128px;
+        cursor: pointer;
+        /* transition <property, property> */
+        transition: width 2s, height 2s, rotate 2s;
+    }
+    #caja:hover{
+        width: 200px;
+        height: 200px;
+        rotate: 270deg;
+    }
+    
+#tercero{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: var(--accent);
+    margin: 40px 0px;
+    /* property duration dely */
+    transition: width 1s 0s,
+                height 1s 1s;
+}
+    #tercero:hover{
+        width: 768px;
+        height: 360px;
+    }
+
+#cuarto{
+    background-color: var(--secondary);
+}
+    #uno, #dos, #tres, #cuatro{
+        width: 32px;
+        height: 32px;
+        margin: 8px 0px;
+        background-color: var(--accent);
+        transition: 2s;
+        transform-origin: left; /* ver */
+    }
+    #uno{
+        transition-timing-function: ease;
+    }
+    #dos{
+        transition-timing-function: linear;
+    }
+    #tres{
+        transition-timing-function: ease-out;
+    }
+    #cuarto{
+        transition-timing-function: ease-in-out;
+    }
+    #uno:hover,
+    #dos:hover,
+    #tres:hover,
+    #cuatro:hover
+    {
+        transform: scaleX(1500%);
+    }

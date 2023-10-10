@@ -1,0 +1,76 @@
+@import "tipografia.css";
+:root{
+    --text:  #f8fcfc; /* #303030 */
+    --bg: #0b1e1e; /* #e1f4f4  */
+    --primary: #65c8c8; /* #379a9a */
+    --secondary: #1b4b4b; /* #b4e4e4 */
+    --accent: #69c9c9; /* #369696; */
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Figtree', sans-serif;
+}
+
+main{
+    margin: 64px auto;
+    width: 1024px;
+}
+    #fotos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+        #fotos article{
+            position: relative;
+        }
+        #fotos article:hover::before{
+            opacity: 1;
+        }
+        #fotos article::before{
+            transition: 300ms;
+            z-index: 10;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 82%;
+            opacity: 0;
+            background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 0.7) 100%
+            );
+            /*background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 41%, rgba(0,0,0,0.5) 100%);*/
+        }
+            #fotos img{
+                width: 100%;
+            }
+
+    /* h2 */
+        #fotos article:hover h2{
+            position: absolute;
+            bottom: 104px;
+            left: 8px;
+            z-index: 20;
+            opacity: 1;
+        }
+        #fotos article h2{
+            opacity: 0;
+            transition: 300ms;
+            bottom: 0;
+            z-index: 0;
+        }
+    /* p */
+        #fotos article:hover p{
+            position: absolute;
+            bottom: 64px;
+            left: 8px;
+            z-index: 20;
+            opacity: 1;
+        }
+        #fotos article p{
+            opacity: 0;
+            transition: 300ms;
+            bottom: 8px;
+            z-index: 0;
+        }

@@ -1,0 +1,48 @@
+@import "tipografia.css";
+:root{
+    --text:  #f8fcfc; /* #303030 */
+    --bg: #0b1e1e; /* #e1f4f4  */
+    --primary: #65c8c8; /* #379a9a */
+    --secondary: #1b4b4b; /* #b4e4e4 */
+    --accent: #69c9c9; /* #369696; */
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Figtree', sans-serif;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+header nav{
+    width: 1024px;
+    margin: auto;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    header nav a{
+        color: var(--accent);
+        padding: 16px;
+        transition: 500ms;
+        position: relative;
+        /* border-bottom: 8px solid var(--bg); */
+    }
+    header nav a:hover::before{
+        /* border-bottom: 8px solid var(--accent); */
+        opacity: 1;
+        transition: 500ms;
+        width: 100%;
+
+    }
+    header nav a::before{
+        content: '';
+        border-bottom: 4px solid var(--accent);
+        width: 0%;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        opacity: 0;
+    }
