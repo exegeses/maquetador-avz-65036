@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+/* variables */
+$bg: #3c3c3c;
+$text: $bg;
+/* globales */
+@import "global";
+
+/* mixins */
+@mixin centrarX{
+    justify-content: center;
+}
+@mixin centrarY{
+    align-items: center;
+}
+@mixin centrar{
+  display: flex;
+  @include centrarX;
+  @include centrarY;
+}
+
+body{
+  font-family: 'Figtree', sans-serif;
+  color: $text;
+}
+@import "global";
+@import "header";
+main{
+  min-height: 650px;
+}
+
+#principal{
+    width: 768px;
+    margin: 72px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    @include centrarY;
+    article{
+      width: 508px;
+      text-align: center;
+      h2{
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 24px;
+      }
+      h1{
+        font-size: 32px;
+        font-weight: 300;
+      }
+    }
+    img{
+      width: 260px;
+    }
+}
+
+
+@import "footer";

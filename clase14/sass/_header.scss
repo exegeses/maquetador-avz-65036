@@ -1,0 +1,13 @@
+header{
+  background-color: $bg;
+  div{
+    width: 1024px;
+    height: 104px;
+    margin: auto;
+    display: flex;
+    @include centrarY;
+    img{
+      width: 72px;
+    }
+  }
+}

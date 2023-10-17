@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap");
+/* variables */
+/* globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* mixins */
+body {
+  font-family: "Figtree", sans-serif;
+  color: #3c3c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #3c3c3c;
+}
+header div {
+  width: 1024px;
+  height: 104px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+header div img {
+  width: 72px;
+}
+
+main {
+  min-height: 650px;
+}
+
+#principal {
+  width: 768px;
+  margin: 72px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#principal article {
+  width: 508px;
+  text-align: center;
+}
+#principal article h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+#principal article h1 {
+  font-size: 32px;
+  font-weight: 300;
+}
+#principal img {
+  width: 260px;
+}
+
+footer {
+  background-color: #3c3c3c;
+}
+footer div {
+  width: 1024px;
+  height: 160px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div img {
+  width: 64px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
