@@ -52,6 +52,13 @@ main{
       width: 260px;
     }
 }
+#botones{
+  width: 768px;
+  height: 192px;
+  @include centrar;
+  margin: auto;
+}
+@import "botones";
 
 
 @import "footer";

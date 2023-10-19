@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+/* globales */
+@import "global";
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;/* que suba con la rueda */
+}
+body{
+  font-family: 'Figtree', sans-serif;
+  color: #fff;
+}
+/* mixins */
+@mixin d-flex
+  (
+    $justify: center,
+    $align: center
+  )
+{
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin d-grid
+  (
+      $cantidad: 1,
+      $unidad: 1fr,
+      $gap: 20px
+  )
+{
+    display: grid;
+    grid-template-columns: repeat($cantidad, $unidad);
+    column-gap: $gap;
+}
+@mixin section-colores($bg-color: #666)
+{
+  background-color: $bg-color;
+}
+
+
+nav{
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include d-flex();
+  position: fixed;
+  width: 100%;
+  a{
+    font-weight: 600;
+    color: #fff;
+    padding: 16px;
+  }
+}
+
+.seccion{
+    height: 100vh;
+    @include d-flex();
+    scroll-snap-align: start;
+}
+.bg-verde{
+  @include section-colores(#0a2);
+}
+.bg-rojo{
+  @include section-colores(#d00);
+}
+.bg-azul{
+  @include section-colores(#02a);
+}
+.bg-amarillo{
+  color: #f60;
+  @include section-colores(#ff0);
+}
+.bg-gris{
+  @include section-colores();
+}
+
+/*
+bg-verde
+bg-rojo
+bg-azul
+bg-amarillo
+bg-gris
+*/

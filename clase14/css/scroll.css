@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap");
+/* globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; /* que suba con la rueda */
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  color: #fff;
+}
+
+/* mixins */
+nav {
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+nav a {
+  font-weight: 600;
+  color: #fff;
+  padding: 16px;
+}
+
+.seccion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.bg-verde {
+  background-color: #0a2;
+}
+
+.bg-rojo {
+  background-color: #d00;
+}
+
+.bg-azul {
+  background-color: #02a;
+}
+
+.bg-amarillo {
+  color: #f60;
+  background-color: #ff0;
+}
+
+.bg-gris {
+  background-color: #666;
+}
+
+/*
+bg-verde
+bg-rojo
+bg-azul
+bg-amarillo
+bg-gris
+*/
+
+/*# sourceMappingURL=scroll.css.map */

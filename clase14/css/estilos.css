@@ -69,6 +69,53 @@ main {
   width: 260px;
 }
 
+#botones {
+  width: 768px;
+  height: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.btn {
+  padding: 12px 32px;
+  margin: 0px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.btn-blanco {
+  background-color: #fff;
+  color: #3c3c3c;
+  /* transform: translateY(0px); */
+  transition: 300ms;
+}
+.btn-blanco:hover {
+  background-color: #f0f0f0;
+}
+.btn-blanco:active {
+  transform: translateY(2px);
+}
+
+.btn-naranja {
+  background-color: #FA6400;
+  color: #fff;
+  transition: 300ms;
+}
+.btn-naranja:hover {
+  background-color: #ff8533;
+}
+
+.btn-verde {
+  background-color: #41B25C;
+  color: #fff;
+  transition: 300ms;
+}
+.btn-verde:hover {
+  background-color: #3dcc5f;
+}
+
 footer {
   background-color: #3c3c3c;
 }

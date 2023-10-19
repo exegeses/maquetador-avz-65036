@@ -1,0 +1,53 @@
+@mixin btn(
+        $border-color: rgba(0, 0, 0, 0.2),
+        $border-radius: 8px
+        )
+{
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+@mixin btn-colores(
+              $color-fondo: #fff,
+              $color-texto: $text
+              )
+{
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+@mixin color-hover( $color: #f0f0f0 )
+{
+    background-color: $color;
+}
+.btn{
+    padding: 12px 32px;
+    margin: 0px 8px;
+    @include btn();
+}
+
+.btn-blanco{
+    @include btn-colores();
+    /* transform: translateY(0px); */
+    transition: 300ms;
+    &:hover{
+      @include color-hover();
+    }
+    &:active{
+      transform: translateY(2px);
+    }
+}
+.btn-naranja{
+    @include btn-colores( #FA6400, #fff );
+    transition: 300ms;
+    &:hover{
+      @include color-hover(#ff8533);
+    }
+}
+
+.btn-verde{
+    @include btn-colores( #41B25C, #fff );
+    transition: 300ms;
+    &:hover{
+      @include color-hover(#3dcc5f);
+    }
+}
+
